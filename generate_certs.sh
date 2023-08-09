@@ -8,7 +8,7 @@ SERVER_SAN=moon.strongswan.org
 CLIENT_CN="carol@strongswan.org"
 
 CONFIG_DIR=$PWD/config/ipsec.d
-IPSEC="docker run -it --rm=true -v $CONFIG_DIR:/etc/ipsec.d strongswan"
+IPSEC="docker run -it --rm=true -v $CONFIG_DIR:/etc/ipsec.d strongx509/strongswan"
 
 mkdir -p $CONFIG_DIR/aacerts \
          $CONFIG_DIR/acerts \
